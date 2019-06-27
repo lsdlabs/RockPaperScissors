@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rockpaperscissorsgame.MainActivity">
+
+    <TextView
+        android:id="@+id/playerChoiceLabel"
+        android:layout_width="230dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="91dp"
+        android:text="Player's Choice:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/playerChoiceImage"
+        android:layout_width="101dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="155dp"
+        android:src="@drawable/rock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerChoiceLabel" />
+
+    <TextView
+        android:id="@+id/computerChoiceLabel"
+        android:layout_width="230dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="91dp"
+        android:text="Computer's Choice:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerChoiceImage" />
+
+    <ImageView
+        android:id="@+id/computerChoiceImage"
+        android:layout_width="101dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="155dp"
+        android:src="@drawable/paper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/computerChoiceLabel" />
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="263dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="74dp"
+        android:text="Score: Player: 0 Computer: 0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/computerChoiceImage" />
+
+    <Button
+        android:id="@+id/rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="63dp"
+        android:text="Rock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/paper"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreLabel"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="64dp"
+        android:text="Paper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreLabel" />
+
+    <Button
+        android:id="@+id/scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="63dp"
+        android:text="Scissors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toEndOf="@+id/paper"
+        app:layout_constraintTop_toBottomOf="@+id/scoreLabel"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>
